@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Petit Formal Script';
+    src: url('/font/PetitFormalScript-Regular.woff2') format('woff2'),
+        url('/font/PetitFormalScript-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+
+    background : url("/img/background-palmiers.jpg") no-repeat #8b8a8f;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.mr {
+
+    margin-right:  0.5em;
+
+}
+
+.logo {
+
+    width : 4.5em ;
+
+}
+
+.center-vertically {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.titre {
+
+    text-align: center;
+    font-size: 2em;
+
+}
+
+.round-box, .square-box {
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.square-box {
+
+    background-size: cover;
+
+}
+
+.round-box, .square-box{
+
+    height :  375px;
+
+}
+
+.text-box {
+
+    font-family: 'Petit Formal Script';
+    font-size:  2em;
+    text-transform: capitalize;
+    color:  #fff;
+    font-weight:  bold;
+}
+
+.square-box  .text-box {
+
+    font-size:  1em;
+
+}
+
+.flip {
+    -webkit-transform:scaleX(-1);
+    -moz-transform:scaleX(-1);
+    -ms-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+.flip * {
+    -webkit-transform:scaleX(-1);
+    -moz-transform:scaleX(-1);
+    -ms-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+}
+
+.cp-2-cr {
+
+   padding: 0.5em 0.3em;
+   color: #fff;
+
+}
+
+.img-txt {
+
+    height:  30px;
+
+}
+
+.promo-box {
+
+    background-color: #000;
+    color : #fff;
+    text-transform:  uppercase;
+    float: right;
+    padding:  0.2em;
+    padding-left:  0.7em;
+    margin-top: 0.5em;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.price-box {
+
+    text-align: center;
+    color : #fff;
+}
+
+.pink-txt  {
+
+    color : #fedbf1;
+    font-weight:  bold;
+}
+
+.strikethrough {
+    position: relative;
+    color : #fff;
+}
+
+.strikethrough:before {
+    border-bottom: 1px solid #fedbf1;
+    position: absolute;
+    content: "";
+    margin-top: 2px;
+    width: 100%;
+    height: 50%;
+}
+
+/* Animation */
+
+.round-box:hover,  .square-box:hover {
+
+    cursor : pointer;
+}
+
+.round-box:hover {
+
+    transition: .4s ease-in-out;
+    font-size : 3em;
+
+}
+
+.square-box:hover {
+
+    transition: .4s ease-in-out;
+    font-size : 1.5em;
+
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 64em) {
+
+    body {
+
+        background-size: 100% 80%;
+    }
+
+}
+
