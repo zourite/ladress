@@ -11,7 +11,7 @@ var app = new Vue({
        methods: { 
            getData : function() {
             axios
-            .get('/js/flux.json')
+            .get('js/flux.json')
             .then(
                 response => {
 
