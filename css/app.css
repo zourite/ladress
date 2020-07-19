@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Petit Formal Script';
-    src: url('/font/PetitFormalScript-Regular.woff2') format('woff2'),
-        url('/font/PetitFormalScript-Regular.woff') format('woff');
+    src: url('../font/PetitFormalScript-Regular.woff2') format('woff2'),
+        url('../font/PetitFormalScript-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -10,7 +10,7 @@
 
 body {
 
-    background : url("img/background-palmiers.jpg") no-repeat #8b8a8f;
+    background : url("../img/background-palmiers.jpg") no-repeat #8b8a8f;
     font-family: 'Roboto', sans-serif;
 
 }
